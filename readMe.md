@@ -9,4 +9,4 @@ ____
 ## Install 
 
 Download it and run it with python 3  
-Package needed : requests ,lxml ,webbrowser 
+Packages needed : requests ,lxml ,webbrowser 
