@@ -6,5 +6,5 @@ ____
 
 ## install 
 
-Download it and run it with python 3
+Download it and run it with python 3  
 package needed : requests ,lxml ,webbrowser 
