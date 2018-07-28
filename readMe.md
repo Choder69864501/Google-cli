@@ -8,5 +8,5 @@ ____
 
 ## Install 
 
-Download it and run it with python 3  
+Download and run it with python 3  
 Packages needed : requests ,lxml ,webbrowser 
