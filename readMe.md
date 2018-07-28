@@ -4,7 +4,7 @@
 
 ____
 
-## install 
+## Install 
 
 Download it and run it with python 3  
-package needed : requests ,lxml ,webbrowser 
+Package needed : requests ,lxml ,webbrowser 
