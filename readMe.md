@@ -2,6 +2,8 @@
 
 ## A little tool to help you Google in command line .  
 
+~~not for windows~~  
+
 ____
 
 ## Install 
