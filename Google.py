@@ -9,6 +9,7 @@ print('Search:', end='', flush=True)
 try:
     Q = input()
 except KeyboardInterrupt:
+    print('')
     sys.exit()
 print('')
 data = {'q': Q}
@@ -26,6 +27,7 @@ while True:
         Choose = input('Choose one:')
         Choose = int(Choose) - 1
     except (KeyboardInterrupt, ValueError):
+        print('')
         break
     webbrowser.open_new_tab(sugs[Choose])
 sys.exit()
