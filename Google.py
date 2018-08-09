@@ -8,7 +8,7 @@ url = 'https://www.google.com/search'
 
 
 def google():
-    print('Search:', end='', flush=True)
+    print("Search(Press ctrl-c to exit):", end='', flush=True)
     try:
         Q = input()
     except KeyboardInterrupt:
