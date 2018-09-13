@@ -18,8 +18,8 @@ def google():
     except KeyboardInterrupt:
         print('')
         sys.exit()
-    if Q.split('.')[0] == 'www' or Q.split('.')[
-            0] == 'https://www' or Q.split('.')[0] == 'http://www':
+    if Q.split('.')[0] == 'www' or Q.split('.')[0] == 'https://www' or Q.split('.')[
+            0] == 'http://www' or Q.split(':')[0] == 'htpps' or Q.split(':')[0] == 'htpp':
         print('Opening website')
         return None
     print('')
