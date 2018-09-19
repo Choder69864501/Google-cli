@@ -15,7 +15,7 @@ def google():
         flush=True)
     try:
         Q = input()
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, EOFError):
         print('')
         sys.exit()
     if Q.split('.')[0] == 'www' or Q.split('.')[0] == 'https://www' or Q.split('.')[
@@ -34,6 +34,8 @@ while True:
     a = 1
     sugs = []
     if soup is None:
+        if Q.split(':')[0] != 'https' or Q.split(':')[0] != 'http':
+            Q = 'https://' + Q
         webbrowser.open_new_tab(Q)
         continue
     for link in soup.find_all('h3', 'r'):
@@ -45,7 +47,7 @@ while True:
         try:
             Choose = input('Choose one:')
             Choose = int(Choose) - 1
-        except (KeyboardInterrupt, ValueError):
+        except (KeyboardInterrupt, ValueError, EOFError):
             print('')
             break
         webbrowser.open_new_tab(sugs[Choose])
